@@ -1,0 +1,22 @@
+metadata:
+  version: "1.1.0"
+  domain: "o16g Core Architecture"
+  description: "Agnostic structural rules injected by the central SDK."
+
+constraints:
+  architecture:
+    - id: "ARCH-001"
+      name: "Strict Layer Separation"
+      rule: "The presentation layer or external transport interface (HTTP/gRPC/MQTT) MUST NOT contain business logic or data persistence. Norms and Safeguards ensure agentic orchestration is decisive and aligned."
+      enforcement: "AST Scanner - Reject PR if import boundaries are violated."
+
+  performance:
+    - id: "PERF-001"
+      name: "Mandatory Contexts and Timeouts"
+      rule: "Every outgoing call to a database or external API MUST implement an explicit timeout mechanism and strict context lifecycle control."
+
+  security_and_compliance:
+    - id: "SEC-001"
+      name: "Fail-Safe (Safety-First)"
+      rule: "In mission-critical or IoT systems, it is mandatory to define the system's behavior upon signal loss or data error (Fail-safe Modes)."
+      
