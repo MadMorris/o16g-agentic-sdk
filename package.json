@@ -1,0 +1,18 @@
+{
+  "name": "o16g-agentic-sdk",
+  "version": "1.3.0",
+  "description": "Governance and orchestration framework for autonomous development driven by Artificial Intelligence agents.",
+  "type": "module",
+  "main": "bin/o16g.js",
+  "bin": {
+    "o16g": "bin/o16g.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MadMorris",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}
